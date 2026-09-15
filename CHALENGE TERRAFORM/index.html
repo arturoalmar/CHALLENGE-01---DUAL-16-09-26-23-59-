@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Práctica de despliegue de contenido estático con Terraform, AWS S3 e IA.">
+  <title>Static launchpad | Arturo Almudi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="topbar" aria-label="Navegación principal">
+      <a class="brand" href="index.html"><span class="brand-mark">T</span><span>static<span class="brand-accent">/</span>launchpad</span></a>
+      <span class="topbar-label">DEVOPS 00 · LABORATORIO</span>
+    </nav>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> Despliegue completado en local</p>
+        <h1 id="page-title">De código a nube,<br><em>sin rodeos.</em></h1>
+        <p class="hero-text">Una práctica de infraestructura como código para entender cómo una página estática viaja desde Visual Studio Code hasta Amazon S3.</p>
+        <div class="hero-meta">
+          <div><span class="meta-label">AUTOR</span><strong>Arturo Almudi</strong></div>
+          <div><span class="meta-label">STACK</span><strong>Terraform · AWS · IA</strong></div>
+        </div>
+      </div>
+      <div class="orbit-card" aria-label="Resumen del flujo de despliegue">
+        <div class="orbit-ring orbit-ring-large"></div>
+        <div class="orbit-ring orbit-ring-small"></div>
+        <div class="orbit-core"><img src="assets/logo.svg" alt="Terraform"></div>
+        <span class="orbit-node node-one">IA</span>
+        <span class="orbit-node node-two">S3</span>
+        <span class="orbit-node node-three">CLI</span>
+        <span class="orbit-caption">infraestructura<br><strong>lista para viajar</strong></span>
+      </div>
+    </section>
+
+    <section class="pipeline-section" aria-labelledby="pipeline-title">
+      <div class="section-heading"><p class="eyebrow">01 / EL RECORRIDO</p><h2 id="pipeline-title">Una ruta, tres herramientas.</h2></div>
+      <div class="pipeline">
+        <article class="pipeline-step"><span class="step-number">01</span><span class="step-icon">⌘</span><h3>Visual Studio Code</h3><p>El punto de partida: archivos claros, editables y versionables.</p></article>
+        <span class="pipeline-arrow" aria-hidden="true">→</span>
+        <article class="pipeline-step"><span class="step-number">02</span><span class="step-icon">⌁</span><h3>Terraform + IA</h3><p>La infraestructura se declara y se revisa con ayuda contextual.</p></article>
+        <span class="pipeline-arrow" aria-hidden="true">→</span>
+        <article class="pipeline-step"><span class="step-number">03</span><span class="step-icon">↗</span><h3>Amazon S3</h3><p>Los archivos llegan al bucket y quedan listos para servir.</p></article>
+      </div>
+    </section>
+
+    <section class="knowledge-section" aria-labelledby="knowledge-title">
+      <div class="section-heading"><p class="eyebrow">02 / LO ESENCIAL</p><h2 id="knowledge-title">Tres ideas para llevarte.</h2></div>
+      <div class="knowledge-grid">
+        <article class="knowledge-card card-terraform"><span class="card-tag">INFRAESTRUCTURA</span><h3>Terraform</h3><p>Define recursos cloud con archivos declarativos. El estado convierte cada cambio en algo visible, repetible y controlable.</p><span class="card-index">01</span></article>
+        <article class="knowledge-card card-s3"><span class="card-tag">ALMACENAMIENTO</span><h3>Amazon S3</h3><p>Guarda objetos con durabilidad y escala. Un bucket puede almacenar los archivos que componen una web estática.</p><span class="card-index">02</span></article>
+        <article class="knowledge-card card-mcp"><span class="card-tag">CONTEXTO</span><h3>MCP</h3><p>Conecta modelos con herramientas y contexto real para que la IA pueda trabajar sobre el proyecto, no solo describirlo.</p><span class="card-index">03</span></article>
+      </div>
+    </section>
+
+    <section class="status-bar" aria-live="polite">
+      <div class="status-copy"><span class="status-dot"></span><div><span class="meta-label">ESTADO DE LA DEMO</span><strong id="status-message">Archivos listos para sincronizar</strong></div></div>
+      <button class="sync-button" id="sync-button" type="button"><span>↗</span> Simular sync</button>
+    </section>
+
+    <footer><span>DEVOPS 00</span><span>Práctica de despliegue de contenido estático</span><span>Arturo Almudi · 2026</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
